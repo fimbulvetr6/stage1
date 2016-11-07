@@ -1,0 +1,63 @@
+/* This is a CSS comment. Notice that CSS comments are
+enclosed by different characters than HTML comments. */
+h1 {
+  text-align: center;
+  font-family: "times new roman", times, serif;
+  color: #022359
+}
+h2 {
+  border-bottom: solid;
+  border-color: #e0e2e5;
+  margin-left:10px;
+}
+h3 {
+  margin-left:15px;
+  border-bottom:solid;
+  border-bottom-width:thin;
+  border-color:#e0e2e5;
+}
+p {
+margin:20px;
+
+}
+body {
+  background-color: #8aa4ce;
+
+}
+.content {
+  font-family: "times new roman",times, serif;
+  border-style:solid;
+  border-radius: 15px;
+  background-color: #022359;
+  color:#e0e2e5;
+
+}
+img {
+  max-width: 100%;
+  height:auto;
+}
+.flex-container {
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: horizontal;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item {
+  padding: 5px;
+  background: #022359;
+  flex:33%;
+  margin-top: 10px;
+
+}
+/* CSS allows you to give your page style (colors, shapes, fonts, etc.)
+You can apply CSS elements to entire HTML classes. Review Lesson 1.3
+if you need a refresher about how to do this. */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/Users/zswinter/Desktop/Project/Stage1/stage1/stage1style.css">
+  <title>Zachary’s Notes</title>
+</head>
+<body>
+  <h1> Lesson 1: The Basics of Web and HTML</h1>
+  <div class="content">
+    <h2> Structure and Function of the Internet </h2>
+    <p>
+      Computers are unable to interpret the ambiguity within human language, so programming languages are engineered to limit this ambiguity. Because code is written for both programmers and humans it must be easily read, so good structure is important.  Through the use of this unambiguous language computer scientists have been able to create the massive communication network known as the World Wide Web. The network of the Web is comprised of the connection of clients to servers. Clients are a user, their computer and it’s web browser; Servers are computers specialized for storing, receiving requests for, and the transmission of files to clients. Clients and servers communicate via HTTP, Hyper Text Protocol, or a uniform structure for computer to computer communication. The files which are requested by clients and stored by servers can come in many forms including <strong>HTML</strong> <em>Hyper Text Markup Language</em> documents, plain text, images, videos, music, and hyperlinks (which are used to connect HTML documents to one another). HTML itself is an unambiguous language for displaying information and media on the internet, it is made up of text content (what is displayed on a page), markup (how it is displayed), references to other documents (e.g. images and videos), and links to other pages (hyperlinks).
+    </p>
+    <div>
+      <h2>Markups and Elements</h2>
+      <p>
+        The markups not only affect the visual properties of content, but also can change the referential properties of the content (e.g. where an image is displayed within a document or causing a line of text to redirect to an external document). HTML markup is made up of content bounded by an opening and a closing tag; this basic unit of HTML is called an “element”.
+      </p>
+      <p>
+        (e.g. &ltNAME&gt contents &lt/NAME&gt)
+      </p>
+      <p>
+        Some examples following this basic structure are the “bold” and “em” tags; they bold and italicize text, respectively.
+      </p>
+      <p>
+        Bold: &ltb&gt content &lt/b&gt
+        <br>
+        Em: &ltem&gt content &lt/em&gt
+        <br>
+      </p>
+      <div>
+        <h3>Attributes</h3>
+        <p>
+          HTML attributes are another feature of elements which are able to give content additional information without necessarily altering the appearance of the content.
+          <br>
+          (e.g. &ltTAG ATTR=“value”&gt contents &lt/TAG&gt)
+        </p>
+        <p>
+          A specific example of an attribute would be the anchor attribute, which is used for creating links.
+          <br>
+          (e.g. &lta href=“www.reddit.com”&gtderp&lt/a&gt)
+        </p>
+        <p>
+          Not all elements contain a text content, but may rather have a URL as their content, these do not require an end tag; these elements are known as “void tags”. An example of a void tag is the image tag, as mentioned before, because it’s content is a URL containing an image file, instead of text to be marked up, it does not require an end tag.
+          <br>
+          Image: &ltimg&gt
+          (e.g. &ltimg src=“url” alt=“text”&gt)
+          <br>
+          (n.b. “alt” is used when when there is a broken request so that the client would still be able to tell what was meant to be there instead, also, used for the visually impaired)
+        </p>
+      </div>
+      <div>
+        <h3> Inline v. Block </h3>
+        <p>
+          There are two main divisions on how to manipulate the content within elements, by either block or inline tags. As the names imply the inline tag only affects the text within one line, whereas block tags will create a box around the content which may then be further altered.
+          <br>
+          A couple of examples are within coloring and spacing. In coloring the inline tag is the span tag and the block tag is the div tag.
+          The spacing within HTML is all rendered into one space and text on multiple lines becomes text on one line.
+          <br>
+          There are two ways of creating new lines via the br or p tags.
+          <br>
+          Break states that a line ends here and causes the next content to wrap around to a new line; is a void tag.
+          <br>
+          &ltbr&gt content
+          <br>
+          Paragraph creates a box around text which may have it’s height and width altered.
+          <br>
+          &ltp&gt content &lt/p&gt
+        </p>
+      </div>
+    </div>
+  </div>
+  <h1> Lesson 2: Creating a Structured Document</h1>
+  <div class="content">
+    <h2>Boxes and Trees</h2>
+    <p>
+      It is helpuful to think of all content within HTML elements as being in
+      series of rectangles, and all HTML documents as being dendritic in nature.
+    </p>
+    <div>
+      <h3>Little Boxes</h3>
+      <p>
+        If one is to use the <b>developer tools</b> on a webpage they will see that
+        all elements within a webpage a nested into rectangles laid out across the
+        page.
+        Markups, especially block attributes, alter the shape, appearance and
+        function of these boxes.
+      </p>
+    </div>
+    <div>
+      <h3>The Virtual Jungle</h3>
+      <p>
+        The structure of HTML document is ordered via levels of indention, but a
+        better visual analog would be a tree. Each element in the document can be
+        thought of as a branch with relevant, yet subordinate elements branching
+        off of its parent branch.
+        However, it is best to remeber the tree only as a visualization tool to
+        better conceptualize the cascasding levels of indention in the document.
+      </p>
+    </div>
+  </div>
+  <h1> Lesson 3: HTML and CSS </h1>
+  <div class="content">
+    <h2> Avoid Repetition </h2>
+    <p>
+      A key to making well structured and legible code, by minizing repetition in one's code, there is a lesser chance of errors due to perhaps incorrect placement, use, and or closing of these repeated tags. A good way to circumvent this foible is by using CSS.
+    </p>
+    <h2> CSS </h2>
+    <p>
+      Cascading Style Sheets or CSS allows the programmer to assign HTML elements CSS class and then specify the appearances and behaviors of these classes, rather than give each HTML element a litany of markup tags.
+    </p>
+  </div>
+  <h1> References and Examples </h1>
+  <div>
+    <p>
+      <ul>
+        <li><a href="http://www.w3schools.com/html/default.asp">HTML Reference</a></li>
+        <li><a href="http://www.w3schools.com/css/css_intro.asp">CSS Reference</a></li>
+        <li><a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345402/modules/383612889175460/lessons/4131369051/concepts/36111086980923#">Udacity CSS cheatsheet</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox Guide</a></li>
+      </ul>
+    </div>
+    <h1> Hopes and Dreams </h1>
+    <div>
+      <ul class="flex-container">
+        <li class="flex-item"><a href="https://www.youtube.com/watch?v=46qKHq7REI4">
+          <img src="https://triviahappy.com/wp-content/uploads/2014/06/thenetpizzanet.jpg" alt="pizza.net"></a></li>
+          <li class="flex-item"><a href="https://www.youtube.com/watch?v=Uwl5MBzTCRQ"><img src="http://schlocktreatment.com/wp-content/uploads/2014/06/JohnnyJones.jpg" alt="Keanu and Dolphin"></a></li>
+          <li class="flex-item"><a href="https://www.youtube.com/watch?v=Ql1uLyuWra8"><img src="https://67.media.tumblr.com/ec2de97d5173a46b037de7ad920f7d43/tumblr_mqtk2b80wA1rm7gdlo1_400.gif" alt="Hack the Planet"></a></li>
+        </ul>
+      </div>
+    </body>
